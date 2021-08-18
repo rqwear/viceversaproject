@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <title>Vise Versa</title>
 </head>
-<body>
+
 <h1>Vise Versa</h1>
-<textarea id="text-to-txet" name="text-to-txet" rows="10" cols="50">
-</textarea>
-  <br><br>
-<input type="submit" value="Reverse!">
+<form action="{% url 'reverse' %}">
+    <textarea id="text-to-txet" name="text-to-txet" rows="10" cols="50"></textarea>
+    <br><br>
+    <input type="submit" value="Reverse!">
 <p>Click to reverce text</p>
+</form>
 </body>
 </html>
